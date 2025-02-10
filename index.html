@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="overflow-x-hidden">
+    <header class="bg-[url('img/pexels-photo-2387793.jpeg')] bg-cover  h-screen  relative ">
+    <nav class="nav-link p-4  md:relative w-3/4 left-36 ">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-white text-2xl font-bold hover:text-blue-300 transition-colors">
+                Brand
+            </a>
+
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex space-x-6 absolute right-10 ">
+                <li>
+                    <a href="tes.html" class="text-white hover:text-slate-500 transition-colors relative group">
+                        <span class="relative">
+                            TEM-1
+                            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-500 transition-all group-hover:w-full"></span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-white hover:text-slate-500 transition-colors relative group">
+                        <span class="relative">
+                            Home
+                            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-500 transition-all group-hover:w-full"></span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-white hover:text-slate-500 transition-colors relative group">
+                        <span class="relative">
+                            About
+                            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-500 transition-all group-hover:w-full"></span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-white hover:text-slate-500 transition-colors relative group">
+                        <span class="relative">
+                            Services
+                            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-500 transition-all group-hover:w-full"></span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-white hover:text-slate-500 transition-colors relative group">
+                        <span class="relative">
+                            Contact
+                            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-500 transition-all group-hover:w-full"></span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="absolute right-5 md:hidden text-white text-2xl">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobileMenu" class=" z-50 fixed top-0 right-0 w-1/2 h-screen bg-gray-800 shadow-lg transform translate-x-full transition-transform duration-300 md:hidden">
+            <div class="p-4 text-right">
+                <button id="closeBtn" class="text-white text-2xl mb-4">×</button>
+                <ul class="space-y-6">
+                    <li>
+                        <a href="#" class="text-white hover:text-blue-300 block px-4 py-2 transition-colors">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white hover:text-blue-300 block px-4 py-2 transition-colors">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white hover:text-blue-300 block px-4 py-2 transition-colors">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white hover:text-blue-300 block px-4 py-2 transition-colors">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr class="border-b border-gray-700 relative w-3/4  left-36 hidden md:block">
+    <div class="p-6 bg-slate-500 w-full md:w-1/2  absolute top-1/2  md:top-1/2 md:left-0 transform  -translate-y-1/2 text-center text-white ">
+        <h1 class="text-3xl font-bold mb-4">Responsive Navbar with Tailwind</h1>
+        <p class="text-gray-600">Resize the window to see the responsive menu and hover over links</p>
+    </div>
+    </header>
+    <section class="  bg-gray-100">
+     <div class=" py-10 flex flex-col items-center justify-center ">
+        <h2 class="relative text-4xl mb-20  uppercase
+         before:absolute before:content-[''] before:left-1/2 before:transform before:-translate-x-1/2 before:h-[2px] before:bg-gray-800 before:bottom-[-30px] before:w-[120px] 
+         after:absolute after:content-[''] after:left-1/2 after:transform after:-translate-x-1/2 after:w-[14px] after:h-[14px] after:rounded-full after:border-2 after:border-gray-800 after:bottom-[-38px] after:bg-white">
+         Our Services</h2>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+     </div>   
+     <div class="  container px-4 w-3/4 mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+            <div class=" flex  flex-col items-center  md:flex-row p-4 ">
+                <i class="fas fa-pencil-ruler fa-2x text-gray-800 md:pr-7 "></i>
+                <div  class="text-center md:text-start" >
+                <h3 class="text-xl font-bold pt-3 mb-2">Service 1</h3>
+                <p>Awesome Image</p>
+               </div>            
+            </div>
+            <div class=" flex flex-col items-center  md:flex-row p-4 ">
+                <i class="fas fa-vector-square fa-2x text-gray-800 md:pr-7 "></i>
+               <div  class="text-center md:text-start">
+                <h3 class="text-xl font-bold mb-2">Service 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+               </div>            
+            </div>
+            <div class=" flex  flex-col items-center  md:flex-row p-4 ">
+                <i class="fab fa-sketch fa-2x text-gray-800 md:pr-7 "></i>
+               <div  class="text-center md:text-start">
+                <h3 class="text-xl font-bold mb-2">Service 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+               </div>            
+            </div>
+            <div class="flex  flex-col  items-center  md:flex-row p-4  ">
+                <i class="fas fa-palette fa-2x text-gray-800 md:pr-7 "></i>
+               <div  class="text-center md:text-start">
+                <h3 class="text-xl font-bold mb-2">Service 4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+               </div>            
+            </div>    
+        </div>    
+     <div class="h-[calc(100vh-25px)] relative bg-[url('img/tech-background.jpg')] bg-cover w-full  grid grid-cols-1 md:grid-cols-2 gap-4 p-4 overflow-hidden">    
+       <div class="w-full absolute -bottom-16  md:left-52   " >
+        <img src="./img/mobile2.png" alt="" class=" relative md:-left-40  lg:-left-20  hidden  md:block overflow-hidden">
+       </div>
+       <div class="bg-blue-500  w-full md:w-1/2 absolute top-1/2    md:right-0 transform  -translate-y-1/2 p-4 text-white">
+        <div class="pl-6 px-8" >
+        <h2 class="text-2xl font-bold mb-4 uppercase">our desgine come with...</h2>
+        <ul>
+            <li><i class="fa-solid fa-computer"></i><p class="inline-block pb-5 pl-4">responsive desgine</p></li>
+            <li><i class="fa-solid fa-computer"></i><p class="inline-block pb-5 pl-4">Modern And Clean Design</p></li>
+            <li><i class="fa-solid fa-computer"></i><p class="inline-block pb-5 pl-4">Clean Code</p></li>
+            <li><i class="fa-solid fa-computer"></i><p class="inline-block pb-5 pl-4">Browser Friendly</p></li>
+        </ul>
+        </div>
+       </div>
+     </div>
+    </section>
+    <section class="bg-gray-100" >
+        <div class=" py-10 flex flex-col items-center justify-center ">
+            <h2 class="relative text-4xl mb-20 uppercase 
+             before:absolute before:content-[''] before:left-1/2 before:transform before:-translate-x-1/2 before:h-[2px] before:bg-gray-800 before:bottom-[-30px] before:w-[120px] 
+             after:absolute after:content-[''] after:left-1/2 after:transform after:-translate-x-1/2 after:w-[14px] after:h-[14px] after:rounded-full after:border-2 after:border-gray-800 after:bottom-[-38px] after:bg-white">
+             Portfolio</h2>
+            <p class="text-wrap text-center w-1/3" >Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+         </div> 
+        <div>
+            <ul class="list-none flex justify-center space-x-4 p-6 m-6 ">
+                <li class="bg-blue-400 text-white p-3" >All</li>
+                <li class="p-3">App</li>
+                <li class="p-3">Photo</li>
+                <li class="p-3">Web</li>
+                <li class="p-3">Print</li>
+            </ul>
+        </div>
+        <div class="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4  mb-2 overflow-hidden"> 
+           <div class="flex flex-col relative  mb-[2px]">
+            <div class="relative group overflow-hidden">
+                <img src="./img/tech-background.jpg" alt="" class="w-full h-60 object-cover transform hover:rotate-3 hover:scale-110 transition-transform duration-500">
+                <div class="p-5 bg-white absolute -bottom-52 left-0 right-0 transition-all duration-500 group-hover:bottom-0">
+                    <h3 class="font-bold mb-2">Awesome Image</h3>
+                    <p class="text-blue-400">Photography</p>
+                </div>
+            </div>
+           </div> 
+           <div class="flex flex-col relative mb-[2px]">
+            <div class="relative group overflow-hidden">
+                <img src="./img/tech-background.jpg" alt="" class="w-full h-60 object-cover transform hover:rotate-3 hover:scale-110 transition-transform duration-500">
+                <div class="p-5 bg-white absolute -bottom-52 left-0 right-0 transition-all duration-500 group-hover:bottom-0">
+                    <h3 class="font-bold mb-2">Awesome Image</h3>
+                    <p class="text-blue-400">Photography</p>
+                </div>
+            </div>
+           </div> 
+           <div class="flex flex-col relative mb-[2px]">
+            <div class="relative group overflow-hidden">
+                <img src="./img/tech-background.jpg" alt="" class="w-full h-60 object-cover transform hover:rotate-3 hover:scale-110 transition-transform duration-500">
+                <div class="p-5 bg-white absolute -bottom-52 left-0 right-0 transition-all duration-500 group-hover:bottom-0">
+                    <h3 class="font-bold mb-2">Awesome Image</h3>
+                    <p  class="text-blue-400">Photography </p>
+                </div>
+            </div>
+           </div>
+           <div class="flex flex-col relative mb-[2px]">
+            <div class="relative group overflow-hidden">
+                <img src="./img/tech-background.jpg" alt="" class="w-full h-60 object-cover transform hover:rotate-3 hover:scale-110 transition-transform duration-500">
+                <div class="p-5 bg-white absolute -bottom-52 left-0 right-0 transition-all duration-500 group-hover:bottom-0">
+                    <h3 class="font-bold mb-2">Awesome Image</h3>
+                    <p  class="text-blue-400">Photography </p>
+                </div>
+            </div>
+           </div> 
+           <div class="flex flex-col relative mb-[2px]">
+            <div class="relative group overflow-hidden">
+                <img src="./img/tech-background.jpg" alt="" class="w-full h-60 object-cover transform hover:rotate-3 hover:scale-110 transition-transform duration-500">
+                <div class="p-5 bg-white absolute -bottom-52 left-0 right-0 transition-all duration-500 group-hover:bottom-0">
+                    <h3 class="font-bold mb-2">Awesome Image</h3>
+                    <p  class="text-blue-400">Photography </p>
+                </div>
+            </div>
+           </div> 
+           <div class="flex flex-col relative mb-[2px]">
+            <div class="relative group overflow-hidden">
+                <img src="./img/tech-background.jpg" alt="" class="w-full h-60 object-cover transform hover:rotate-3 hover:scale-110 transition-transform duration-500">
+                <div class="p-5 bg-white absolute -bottom-52 left-0 right-0 transition-all duration-500 group-hover:bottom-0">
+                    <h3 class="font-bold mb-2">Awesome Image</h3>
+                    <p  class="text-blue-400">Photography </p>
+                </div>
+            </div>
+           </div> 
+           <div class="flex flex-col relative mb-[2px]">
+            <div class="relative group overflow-hidden">
+                <img src="./img/tech-background.jpg" alt="" class="w-full h-60 object-cover transform hover:rotate-3 hover:scale-110 transition-transform duration-500">
+                <div class="p-5 bg-white absolute -bottom-52 left-0 right-0 transition-all duration-500 group-hover:bottom-0">
+                    <h3 class="font-bold mb-2">Awesome Image</h3>
+                    <p  class="text-blue-400">Photography </p>
+                </div>
+            </div>
+           </div> 
+           <div class="flex flex-col relative mb-[2px] ">
+            <div class="relative group overflow-hidden">
+                <img src="./img/tech-background.jpg" alt="" class="w-full h-60 object-cover transform hover:rotate-3 hover:scale-110 transition-transform duration-500">
+                <div class="p-5 bg-white absolute -bottom-52 left-0 right-0 transition-all duration-500 group-hover:bottom-0">
+                    <h3 class="font-bold mb-2">Awesome Image</h3>
+                    <p  class="text-blue-400">Photography </p>
+                </div>
+            </div>
+           </div>  
+           </div>
+        <div class="flex justify-center p-4">
+            <button class="bg-blue-500 text-white  uppercase p-4"> More</button>
+        </div>
+        <div class="mt-36" >
+            <div class="w-full bg-video relative h-screen overflow-hidden">
+                <video autoplay loop muted class="w-full h-full object-cover absolute top-0 left-0">
+                    <source src="./img/3129671-uhd_3840_2160_30fps (1).mp4" type="video/mp4">
+                </video>
+                <div class="w-full bg-blue-400 bg-opacity-40 absolute top-1/2 left-1/2 transform -translate-x-1/2  -translate-y-1/2  text-center text-white">
+                    <h2 class="uppercase text-xl my-5">Super Awesome Video Here</h2>
+                    <p class="mb-8">Its All You Need</p>
+                    <button class="bg-black px-5 py-3 mb-10 uppercase">See More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-100">
+      <div class="container overflow-hidden">
+        <div class="pt-10 pb-20 flex flex-col items-center justify-center ">
+            <h2 class="relative text-4xl mb-20 uppercase 
+             before:absolute before:content-[''] before:left-1/2 before:transform before:-translate-x-1/2 before:h-[2px] before:bg-gray-800 before:bottom-[-30px] before:w-[120px] 
+             after:absolute after:content-[''] after:left-1/2 after:transform after:-translate-x-1/2 after:w-[14px] after:h-[14px] after:rounded-full after:border-2 after:border-gray-800 after:bottom-[-38px] after:bg-white">
+             About Us</h2>
+            <p class="text-wrap text-center w-1/3" >Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+        </div>
+          <img src="./img/about.png" alt="" class="relative -mt-32 -bottom-32 left-1/2 transform -translate-x-1/2">
+      </div>  
+      <div class="relative bg-[url('img/pexels-photo-2387793.jpeg')] bg-cover py-[100px] text-center before:absolute before:inset-0 before:bg-black before:opacity-70">
+        <div class="relative w-4/5 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ">
+            <div class="flex flex-col items-center justify-center bg-[rgb(15_116_143_/_70%)] p-12">
+                <div class="w-10 h-10 flex bg-black justify-center items-center rounded-full mb-8">
+                    <i class="fas fa-pencil-ruler fa-lg text-white"></i>
+                </div>
+                <h3 class="text-5xl font-bold mb-5 text-white">17</h3>
+                <p class="text-lg text-white">Awesome Image</p>
+            </div>
+    
+            <div class="flex flex-col items-center justify-center bg-[rgb(15_116_143_/_70%)] p-12">
+                <div class="w-10 h-10 flex bg-black justify-center items-center rounded-full mb-8">
+                    <i class="fas fa-pencil-ruler fa-lg text-white"></i>
+                </div>
+                <h3 class="text-5xl font-bold mb-5 text-white">17</h3>
+                <p class="text-lg text-white">Awesome Image</p>
+            </div>
+    
+            <div class="flex flex-col items-center justify-center bg-[rgb(15_116_143_/_70%)] p-12">
+                <div class="w-10 h-10 flex bg-black justify-center items-center rounded-full mb-8">
+                    <i class="fas fa-pencil-ruler fa-lg text-white"></i>
+                </div>
+                <h3 class="text-5xl font-bold mb-5 text-white">17</h3>
+                <p class="text-lg text-white">Awesome Image</p>
+            </div>
+    
+            <div class="flex flex-col items-center justify-center bg-[rgb(15_116_143_/_70%)] p-12">
+                <div class="w-10 h-10 flex bg-black justify-center items-center rounded-full mb-8">
+                    <i class="fas fa-pencil-ruler fa-lg text-white"></i>
+                </div>
+                <h3 class="text-5xl font-bold mb-5 text-white">17</h3>
+                <p class="text-lg text-white">Awesome Image</p>
+            </div>
+        </div>
+    </div>
+    <div class="mt-8  mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div class="px-4 mx-auto md:mx-10">
+        <div class=" text-center p-5 w-3/4 mx-auto">
+         <h2 class="text-xl font-bold mb-5 uppercase">Testimonials</h2>
+         <p class="text-gray-600 text-center mb-15">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+       </div> 
+       
+    <div class="mt-8  flex flex-col items-center justify-center md:flex-row md:items-start md:justify-start">
+      <img src="./img/pfp3.png" alt="" class="w-28 h-28 mr-9 border rounded-full border-gray-100 " >
+      <div class="text-center md:text-start relative border-b border-b-gray-500">
+      <p class="pb-6 md:pb-16" >Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+      <p class=" absolute bottom-0 right-0">John Doe, CEO</p>
+      </div>
+    </div>
+    <div class="mt-8  flex flex-col items-center justify-center md:flex-row md:items-start md:justify-start">
+        <img src="./img/pfp3.png" alt="" class="w-28 h-28 mr-9 border rounded-full border-gray-100 " >
+        <div class="text-center md:text-start relative border-b border-b-gray-500">
+        <p class="pb-6 md:pb-16" >Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+        <p class=" absolute bottom-0 right-0">John Doe, CEO</p>
+        </div>
+      </div>
+       <ul class="flex justify-center space-x-4 p-6 m-6 ">
+                <li class="w-3.5 h-3.5 p-3 border rounded-full border-black"></li>
+                <li class="w-3.5 h-3.5 bg-blue-400 text-white p-3 border rounded-full border-blue-400 "></li>
+                <li class="w-3.5 h-3.5 p-3 border rounded-full border-black"></li>
+        </ul> 
+    </div>
+    <div class="px-4 mx-auto md:mx-10">
+        <div class=" text-center p-5 w-3/4 mx-auto">
+            <h2 class="text-xl font-bold mb-5 uppercase">Skills</h2>
+            <p class="text-gray-600 text-center mb-15">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+          </div> 
+
+          <div class="space-y-4">
+            <div>
+                <div class="flex justify-between mb-2">
+                    <span class="text-gray-700">ADOBE</span>
+                    <span class="text-gray-700">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between mb-2">
+                    <span class="text-gray-700">HTML & CSS</span>
+                    <span class="text-gray-700">85%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between mb-2">
+                    <span class="text-gray-700">JAVASCRIPT</span>
+                    <span class="text-gray-700">80%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between mb-2">
+                    <span class="text-gray-700">PHP</span>
+                    <span class="text-gray-700">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+                </div>
+            </div>
+     </div>
+    
+
+
+    </div>
+    </div>
+    <div class="mt-10 bg-[url('img/pexels-photo-2387793.jpeg')] bg-cover" >
+        <div class="container py-10">
+            <div class="flex flex-col items-center justify-center">
+                <h2 class=" relative text-xs px-5 md:px-0 md:text-2xl text-white my-5 text-center uppercase"><i class="fa fa-quote-left  md:absolute md:-top-3 md:-left-6 " aria-hidden="true"></i>accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt. <i class="fa fa-quote-right md:absolute md:-bottom-4 md:-right-6 " aria-hidden="true"></i></h2>
+                <p class="text-white">John Doe</p>
+    </div>
+    </section>     
+    <section  >
+        <div class=" py-10 flex flex-col items-center justify-center ">
+            <h2 class="relative text-4xl mb-20 uppercase 
+             before:absolute before:content-[''] before:left-1/2 before:transform before:-translate-x-1/2 before:h-[2px] before:bg-gray-800 before:bottom-[-30px] before:w-[120px] 
+             after:absolute after:content-[''] after:left-1/2 after:transform after:-translate-x-1/2 after:w-[14px] after:h-[14px] after:rounded-full after:border-2 after:border-gray-800 after:bottom-[-38px] after:bg-white">
+             Pricing</h2>
+            <p class="text-wrap text-center w-1/3" >Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+         </div> 
+         <div class="pricing py-20">
+            <div class="container mx-auto px-4">
+                
+                <div class="plans grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Basic Plan -->
+                    <div class="plan bg-white text-center shadow-lg rounded-lg overflow-hidden">
+                        <div class="head border-t-4 border-blue-600 py-8">
+                            <h3 class="text-2xl font-normal text-gray-800">Basic</h3>
+                            <span class="text-6xl font-bold text-gray-800 mt-4">
+                                <span class="text-2xl font-normal align-top">$</span>19<span class="text-xl font-normal">/Mo</span>
+                            </span>
+                        </div>
+                        <ul class="border-b border-gray-200">
+                            <li class="py-4 border-t border-gray-200">Feature No 1</li>
+                            <li class="py-4 border-t border-gray-200">Extra Feature</li>
+                            <li class="py-4 border-t border-gray-200">Extra Feature No 2</li>
+                            <li class="py-4 border-t border-gray-200">Feature</li>
+                        </ul>
+                        <div class="foot py-6">
+                            <a href="#" class="inline-block px-8 py-3 border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">Buy Now</a>
+                        </div>
+                    </div>
+    
+                    <!-- Premium Plan -->
+                    <div class="plan bg-white text-center shadow-lg rounded-lg overflow-hidden">
+                        <div class="head border-t-4 border-blue-600 py-8">
+                            <h3 class="text-2xl font-normal text-gray-800">Premium</h3>
+                            <span class="text-6xl font-bold text-gray-800 mt-4">
+                                <span class="text-2xl font-normal align-top">$</span>29<span class="text-xl font-normal">/Mo</span>
+                            </span>
+                        </div>
+                        <ul class="border-b border-gray-200">
+                            <li class="py-4 border-t border-gray-200">Feature No 1</li>
+                            <li class="py-4 border-t border-gray-200">Extra Feature</li>
+                            <li class="py-4 border-t border-gray-200">Extra Feature No 2</li>
+                            <li class="py-4 border-t border-gray-200">Feature</li>
+                        </ul>
+                        <div class="foot py-6">
+                            <a href="#" class="inline-block px-8 py-3 border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">Buy Now</a>
+                        </div>
+                    </div>
+    
+                    <!-- Pro Plan -->
+                    <div class="plan bg-white text-center shadow-lg rounded-lg overflow-hidden">
+                        <div class="head border-t-4 border-blue-600 py-8">
+                            <h3 class="text-2xl font-normal text-gray-800">Pro</h3>
+                            <span class="text-6xl font-bold text-gray-800 mt-4">
+                                <span class="text-2xl font-normal align-top">$</span>39<span class="text-xl font-normal">/Mo</span>
+                            </span>
+                        </div>
+                        <ul class="border-b border-gray-200">
+                            <li class="py-4 border-t border-gray-200">Feature No 1</li>
+                            <li class="py-4 border-t border-gray-200">Extra Feature</li>
+                            <li class="py-4 border-t border-gray-200">Extra Feature No 2</li>
+                            <li class="py-4 border-t border-gray-200">Feature</li>
+                        </ul>
+                        <div class="foot py-6">
+                            <a href="#" class="inline-block px-8 py-3 border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">Buy Now</a>
+                        </div>
+                    </div>
+    
+                    <!-- Platinum Plan -->
+                    <div class="plan bg-white text-center shadow-lg rounded-lg overflow-hidden">
+                        <div class="head border-t-4 border-blue-600 py-8">
+                            <h3 class="text-2xl font-normal text-gray-800">Platinum</h3>
+                            <span class="text-6xl font-bold text-gray-800 mt-4">
+                                <span class="text-2xl font-normal align-top">$</span>49<span class="text-xl font-normal">/Mo</span>
+                            </span>
+                        </div>
+                        <ul class="border-b border-gray-200">
+                            <li class="py-4 border-t border-gray-200">Feature No 1</li>
+                            <li class="py-4 border-t border-gray-200">Extra Feature</li>
+                            <li class="py-4 border-t border-gray-200">Extra Feature No 2</li>
+                            <li class="py-4 border-t border-gray-200">Feature</li>
+                        </ul>
+                        <div class="foot py-6">
+                            <a href="#" class="inline-block px-8 py-3 border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="contact-text text-center text-xl text-gray-600 mt-16">Contact us if you have special request</p>
+                <a href="#" class="contact-link block mx-auto w-fit bg-blue-600 text-white px-8 py-3 mt-8 text-center hover:bg-blue-700 transition duration-300">Contact Us</a>
+            </div>
+        </div>
+        <div class=" bg-[url('img/pexels-photo-2387793.jpeg')] bg-cover flex flex-col items-center justify-center md:flex-row h-[35vh]">
+            <div class="bg-transparent flex flex-row items-center justify-center border border-gray-300 rounded-lg overflow-hidden mx-5">
+                <i class="fa-regular fa-envelope px-4 text-white"></i>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="Your Email" 
+                    class="flex-1 p-2 outline-none border-none focus:ring-0 bg-transparent text-white placeholder-white"
+                >
+                <button class="uppercase text-white bg-blue-400 hover:bg-blue-500 transition duration-300 border-0 px-6 py-3">
+                    Subscribe
+                </button>
+            </div>
+            <p class="text-start text-white ml-12" >Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                 Mauris blan dit aliquet elit, eget tincidunt.</p>
+          
+        </div>
+        
+ 
+    </section>
+    <section class="bg-gray-100">
+        <div class=" py-10 flex flex-col items-center justify-center ">
+            <h2 class="relative text-4xl mb-20 uppercase 
+             before:absolute before:content-[''] before:left-1/2 before:transform before:-translate-x-1/2 before:h-[2px] before:bg-gray-800 before:bottom-[-30px] before:w-[120px] 
+             after:absolute after:content-[''] after:left-1/2 after:transform after:-translate-x-1/2 after:w-[14px] after:h-[14px] after:rounded-full after:border-2 after:border-gray-800 after:bottom-[-38px] after:bg-white">
+             Contact Us</h2>
+            <p class="text-wrap text-center w-1/3" >Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+         </div>
+         <div class="contact py-20">
+            <div class="container mx-auto px-4">
+                <div class="content flex flex-col md:flex-row justify-between gap-8">
+                    <form class="relative w-full md:w-[70%]">
+                        <input class="w-full p-5 border mb-8 rounded focus:outline-none" 
+                               type="text" 
+                               name="name" 
+                               placeholder="Your Name" />
+                        <input class="w-full p-5 border mb-8 rounded focus:outline-none" 
+                               type="email" 
+                               name="mail" 
+                               placeholder="Your Email" />
+                        <textarea class="w-full p-5 border mb-8 rounded focus:outline-none h-50" 
+                                  name="message" 
+                                  placeholder="Your Message"></textarea>
+                        
+                            <input class="bg-blue-600 text-white px-5 py-4 rounded cursor-pointer uppercase hover:bg-blue-700 transition absolute -bottom-20 -mr-6 md:mr-0 right-7 md:bottom-0 md:right-0 mb-8 " 
+                                   type="submit" 
+                                   value="Send Message" />
+                        
+                    </form>
+    
+                    <div class="info w-full md:w-[25%] md:order-none order-[-1] text-center md:text-left">
+                        <h4 class="uppercase text-lg font-medium mb-8">Get In Touch</h4>
+                        <span class="block text-gray-600 mb-4">+00 123.456.789</span>
+                        <span class="block text-gray-600 mb-8">+00 123.456.789</span>
+                        
+                        <h4 class="uppercase text-lg font-medium mb-8 mt-24 md:mt-24">Where We Are</h4>
+                        <address class="text-gray-600 leading-loose">
+                            Awesome Address 17<br>
+                            New York, NYC<br>
+                            123-4567-890<br>
+                            USA
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <footer class="bg-[url('img/Eatrh2.jpg')] bg-cover h-[50vh]">
+        <div class="flex flex-col items-center justify-center" >
+            <a href="#" class=" my-6 text-white text-2xl font-bold hover:text-blue-300 transition-colors">
+                Brand
+            </a>
+            <h1 class=" text-2xl uppercase border-b border-b-white text-white pb-4">We Are Social</h1>
+            <div class="social-icons text-white p-5">
+                <a href="https://www.facebook.com/profile.php?id=100011596727317" target="_blank"><i class="fab fa-facebook-f px-2 hover:text-slate-600"></i></a>
+                <i class="fab fa-twitter px-2"></i>
+                <i class="fas fa-home px-2"></i>
+                <i class="fab fa-linkedin px-2"></i>
+              </div>
+              <p class="text-white mt-10">&copy; 2021 <span class="text-blue-600" >Kasper</span> All Right Reserved</p>
+        </div>
+
+    </footer>
+
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        // Toggle mobile menu
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+        });
+
+        // Close mobile menu
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('#mobileMenu') && !e.target.closest('#menuBtn')) {
+                mobileMenu.classList.add('translate-x-full');
+            }
+        });
+
+        // Close menu on resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                mobileMenu.classList.add('translate-x-full');
+            }
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/f55a4e00c8.js" crossorigin="anonymous"></script>
+</body>
+</html>
